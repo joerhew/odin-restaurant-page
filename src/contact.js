@@ -8,6 +8,6 @@ export function loadContact() {
 
   const CONTACT = document.createElement('p');
   CONTACT.classList.add('contact');
-  CONTACT.innerText = `Email us at hip[at]resto[dot]com.`
+  CONTACT.innerText = `If you were unsatisfied with your dining experience, you may email us at hip[at]resto[dot]com. We may or may not respond. We appreciate your feedback in advance.`
   CONTENT.appendChild(CONTACT);
 }
