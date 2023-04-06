@@ -23,6 +23,20 @@ h1 {
   padding: 0 3rem 0 3rem;
 }
 
+h2 {
+  font-size: 1.5rem;
+  color: var(--secondary);
+  text-align: center;
+  margin: 3rem 3rem 3rem 3rem;
+}
+
+h3 {
+  font-family: 'Caveat', cursive;
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 0;
+}
+
 p {
   line-height: 1.6rem;
   padding: 0 3rem 0 3rem;
@@ -46,14 +60,17 @@ img {
 .tab {
   border: 2px solid var(--primary);
   border-bottom-width: 0px;
-  padding: 2rem;
-  margin: 0 3rem 0 3rem;
+  padding: 1rem 0 1rem 0;
   display: flex;
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: 100%;
   justify-content: center;
   font-size: 1.5rem;
+}
+
+.tab:hover {
+  cursor: pointer;
 }
 
 .tab:last-child {
@@ -75,6 +92,18 @@ img {
   border: 50px solid var(--secondary);
 }
 
+.menu-item {
+  padding: 0 3rem 0 3rem;
+}
+
+.menu-name {
+  vertical-align: top;
+}
+
+.menu-description p {
+  padding: 0;
+}
+
 @media screen and (min-width: 768px) {
   .tabs {
     display: flex;
@@ -88,5 +117,21 @@ img {
 
   .tab:last-child {
     border-right-width: 2px;
+  }
+
+  .menu-item {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+  }
+
+  .menu-name {
+    width: 30%;
+    margin-right: 3rem;
+  }
+
+  .menu-description {
+    display: flex;
+    flex: 1;
   }
 }
